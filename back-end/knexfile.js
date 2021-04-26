@@ -1,10 +1,10 @@
+/* eslint-disable strict */
 /**
  * Knex configuration file.
  *
  * You will not need to make changes to this file.
  */
-
-require('dotenv').config();
+require("dotenv").config();
 const path = require("path");
 
 const {
@@ -14,7 +14,6 @@ const {
   DATABASE_URL_PREVIEW = "postgresql://postgres@localhost/postgres",
   DEBUG,
 } = process.env;
-
 module.exports = {
   development: {
     client: "postgresql",
